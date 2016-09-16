@@ -13,6 +13,15 @@
 
 		{{ Form::text('name', '', array('class'=>'form-control', 'placeholder'=>'Digite o nome da disciplina')) }}
 
+
+		{!!Form::label('classroom','Turma:')!!}
+		<select multiple class="form-control"  name ="classrooms[]">
+			  @foreach($classrooms as $c)
+			  <option value="{{$c->id}}"> {{$c->name}} </option>
+			  @endforeach
+		</select>
+
+
 	    {{ Form::submit('Salvar', array('class' => 'btn btn-primary')) }}
 
 	{!!Form::close()!!}

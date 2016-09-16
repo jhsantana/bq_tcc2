@@ -20,7 +20,6 @@ class TeacherController extends Controller
     public function index()
     {
         $teachers = Teacher::all();
-
         return view('index')->with('teachers', $teachers);
     }
 
@@ -81,8 +80,7 @@ class TeacherController extends Controller
     {
         $teacher = Teacher::find($id);
 
-
-        return view('details')->withTeacher($teacher);   
+        return view('details')->with('teacher',$teacher);   
     }
 
     /**
