@@ -21,6 +21,8 @@
 					@foreach($teacher->subjects as $subjects)
 					<td>{{$subjects->name}}</td>
 					@endforeach
+					
+				
 				</tr>
 			</table>		
 		</div>

@@ -35,6 +35,9 @@ Route::get('/teachers/index','TeacherController@index');
 Route::get('/teachers/{id}','TeacherController@show');
 
 
+Route::get('/classroom/create','ClassroomController@create');
+
+Route::post('/classroom','ClassroomController@store');
 
 
 

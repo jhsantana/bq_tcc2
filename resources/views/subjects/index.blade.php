@@ -16,9 +16,12 @@
 		<table class="table">
 		@foreach ($subjects as $subject)
 		<tr>
-		<td>{{ $subject->name }}</td>
-		@endforeach
+				@foreach ($subject->classrooms as $classrooms)
+					<td>{{ $classrooms->name }}</td>
+				@endforeach
+			<td>{{ $subject->name }}</td>
 		</tr>
+		@endforeach
 		</table>
 	</div>
 </body>
