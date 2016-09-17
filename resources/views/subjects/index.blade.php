@@ -14,6 +14,8 @@
 	<div class="container">
 		<h1>Lista de disciplinas</h1>
 		<table class="table">
+		<td><h3> Turma </h3> </td>
+		<td> <h3>Disciplina </h3></td>
 		@foreach ($subjects as $subject)
 		<tr>
 				@foreach ($subject->classrooms as $classrooms)

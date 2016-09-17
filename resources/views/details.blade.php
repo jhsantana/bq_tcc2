@@ -17,9 +17,15 @@
 					<td><h3>E-mail: {{$teacher->email}}</h3></td>
 				</tr>
 				<tr>
-					<td>Disciplina(s):</td>
 					@foreach($teacher->subjects as $subjects)
+					<td>Disciplina</td>
 					<td>{{$subjects->name}}</td>
+					<td> Turma</td>
+						@foreach ($subjects->classrooms as $classrooms)
+						
+							<td>{{ $classrooms->name }}</td>
+
+						@endforeach
 					@endforeach
 					
 				
