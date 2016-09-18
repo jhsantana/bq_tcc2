@@ -16,20 +16,18 @@
 					<td><h3>Matricula: {{$teacher->enrollment}}</h3></td>
 					<td><h3>E-mail: {{$teacher->email}}</h3></td>
 				</tr>
-				<tr>
-					@foreach($teacher->subjects as $subjects)
-					<td>Disciplina</td>
-					<td>{{$subjects->name}}</td>
-					<td> Turma</td>
-						@foreach ($subjects->classrooms as $classrooms)
-						
-							<td>{{ $classrooms->name }}</td>
+			</table>
 
+				<table class="table">
+					@foreach($teacher->subjects as $subjects)
+					<tr>
+						<td>Disciplina: {{$subjects->name}}</td>
+						<td> Turma
+							@foreach ($subjects->classrooms as $classrooms)
+								<td>{{ $classrooms->name }}</td>
+							@endforeach
 						@endforeach
-					@endforeach
-					
-				
-				</tr>
+					</tr>
 			</table>		
 		</div>
 </body>

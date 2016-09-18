@@ -8,6 +8,9 @@ use App\Http\Requests;
 
 use App\Student;
 
+use App\Subject;
+
+
 class StudentController extends Controller
 {
     /**
@@ -17,7 +20,9 @@ class StudentController extends Controller
      */
     public function index()
     {
-        //
+       $students = Student::all();
+
+       return view('students.index')->with('students', $students);
     }
 
     /**
@@ -27,7 +32,8 @@ class StudentController extends Controller
      */
     public function create()
     {
-        return view('students.form_students');
+        $subjects = Subject::all();
+        return view('students.form_students')->with('subjects', $subjects);
     }
 
     /**
@@ -46,6 +52,10 @@ class StudentController extends Controller
         $student->password = $request->password;
 
         $student->save();
+
+        $student->subjects()->sync($request->subjects, false);
+
+        return redirect('students/index');
     }
 
     /**
@@ -56,7 +66,9 @@ class StudentController extends Controller
      */
     public function show($id)
     {
-        //
+        $student = Student::find($id);
+
+        return view ('students.details')->withStudent($student);
     }
 
     /**

@@ -28,7 +28,12 @@
 			{!!Form::label('email','e-mail:')!!}
 			{{ Form::email('email', '', array('class'=>'form-control', 'placeholder'=>'E-mail')) }}
 
-			
+			{!!Form::label('subject','Disciplina:')!!}
+			<select multiple class="form-control"  name ="subjects[]">
+				  @foreach($subjects as $s)
+				  <option value="{{$s->id}}"> {{$s->name}} </option>
+				  @endforeach
+			</select>
 
 			{!!Form::label('password','Password:')!!}
 

@@ -8,9 +8,8 @@ use App\Subject;
 
 class Teacher extends Model
 {
-    public $timestamps = false;
 	protected $fillable = array('enrollment', 'name','email', 'password');
-    protected $guarded = ['password'];
+    protected $guarded = ['id','password'];
 
     public function subjects()
     {
