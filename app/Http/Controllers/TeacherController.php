@@ -80,7 +80,7 @@ class TeacherController extends Controller
     {
         $teacher = Teacher::find($id);
 
-        return view('details')->with('teacher',$teacher);   
+        return view('details')->with('teacher', $teacher);   
     }
 
     /**

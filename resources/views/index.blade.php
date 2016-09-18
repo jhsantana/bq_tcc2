@@ -10,6 +10,11 @@
 			<a class="navbar-brand" href="/teachers/create">Cadastro de professores</a>
 			<a class="navbar-brand" href="/subjects/create">Cadastro de disciplinas</a>
 			<a class="navbar-brand" href="/subjects/index">Lista de Disciplinas</a>
+			<a class="navbar-brand" href="/students/index">Lista de Alunos</a>
+			<a class="navbar-brand" href="/students/create">Cadastro de Alunos</a>
+			<a class="navbar-brand" href="/classroom/create">Cadastro de Disciplina</a>
+
+
 	</nav>
 	<div class="container">
 		<table class="table">
