@@ -7,7 +7,7 @@
 </head>
 <body>
 	<nav class="navbar navbar-inverse">
-		<a class="navbar-brand" href="/teachers/index">Inicio</a>
+		<a class="navbar-brand" href="/home">Inicio</a>
 	</nav>
 		<div class="container">
 			<table class="table">

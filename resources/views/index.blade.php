@@ -6,13 +6,13 @@
 </head>
 <body>
 	<nav class="navbar navbar-inverse">
-			<a class="navbar-brand" href="/teachers/index">Inicio</a>
+			<a class="navbar-brand" href="/home">Inicio</a>
 			<a class="navbar-brand" href="/teachers/create">Cadastro de professores</a>
 			<a class="navbar-brand" href="/subjects/create">Cadastro de disciplinas</a>
 			<a class="navbar-brand" href="/subjects/index">Lista de Disciplinas</a>
 			<a class="navbar-brand" href="/students/index">Lista de Alunos</a>
 			<a class="navbar-brand" href="/students/create">Cadastro de Alunos</a>
-			<a class="navbar-brand" href="/classroom/create">Cadastro de Disciplina</a>
+			<a class="navbar-brand" href="/classroom/create">Cadastro de Turma</a>
 
 
 	</nav>

@@ -6,7 +6,7 @@
 </head>
 <body>
 	<nav class="navbar navbar-inverse">
-		<a class="navbar-brand" href="/teachers/index">Inicio</a>
+		<a class="navbar-brand" href="/home">Inicio</a>
 	</nav>
 	<div style="text-align:center">
 		<h1>Lista de Alunos</h1>
